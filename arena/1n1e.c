@@ -13,7 +13,7 @@ static void create() {
                 "/domains/arena/npc/rat" : 1
                 ])); 
     SetExits( ([ "west" : "/domains/arena/1n.c",
-            "southwest" : "/domains/arena/1s1w.c",
+            "southwest" : "/domains/arena/center.c",
           "south" : "/domains/arena/1e.c"
       ]) );
 }
