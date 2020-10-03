@@ -9,7 +9,7 @@ static void create() {
     SetAdjectives( ({"mangy", "little", "dirty"}) );
     SetId( ({"rat"}) );
     SetShort("a rat");
-    SetLong("A scruffy little dirty rat.");
+    SetLong("A scruffy little dirty rat. Beware, creature randomly pushing button.");
     SetLevel(1);
     SetRace("rodent");
     SetGender("male");
