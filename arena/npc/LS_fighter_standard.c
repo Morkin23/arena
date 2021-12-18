@@ -5,7 +5,6 @@ int CheckOrc(mixed val){
     string *allowed_races = ({ "dark_side" });
     if(!val) return 0;
     if(!objectp(val)) return 0;
-    eventforce("say Test");
     if(member_array(val->GetId(), allowed_races) != -1) return 1;
     return 0;
 }

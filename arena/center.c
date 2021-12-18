@@ -19,8 +19,9 @@ static void create() {
         	"down" : "/realms/morkin/workroom.c"
       ]) );
       SetInventory( ([
-                "/domains/arena/npc/red_dragon" : 1,
-                "/domains/arena/npc/dummy" : 1,
+//                "/domains/arena/npc/red_dragon" : 1,
+//                "/domains/arena/npc/dummy" : 1,
+		            "/domains/arena/npc/scanner" : 1,
                 ]) ); 
 }
 

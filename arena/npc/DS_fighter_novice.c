@@ -2,12 +2,9 @@
 inherit LIB_SENTIENT;
 
 int CheckOrc(mixed val){
-    string *allowed_races = ({ "light_side" });
+    string *allowed_races = ({ "orc" });
     if(!val) return 0;
     if(!objectp(val)) return 0;
-    foreach(mixed val in GetId()){
-            if(member_array(val->GetId(), allowed_races) != -1) return 1;
-        }
     return 0;
 }
 
