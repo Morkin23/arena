@@ -1,0 +1,16 @@
+Mapa:
+ X - dark side
+XXX
+XXX
+XXX
+ X - light side
+
+Dark side:
+ novice/standard/veteran human warrior
+ poor/standard/superion shortsword with lightning ability
+ dark side lord - push button to summon warrior
+
+Light side:
+ novice/standard/veteran human warrior
+ poor/standard/superion shortsword with heal ability
+ light side queen - push button to summon warrior

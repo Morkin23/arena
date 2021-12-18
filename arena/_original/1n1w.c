@@ -8,6 +8,10 @@ static void create() {
     SetAmbientLight(30);
     SetShort("Arena - 1N1W");
     SetLong("NorthWest corner of the Arena.");
+    SetInventory(([
+                "/domains/arena/obj/button_human" : 1,
+                "/domains/arena/npc/rat" : 1
+                ])); 
     SetExits( ([ "east" : "/domains/arena/1n.c",
         "southeast" : "/domains/arena/center.c",
           "south" : "/domains/arena/1w.c"
