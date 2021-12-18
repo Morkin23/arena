@@ -10,7 +10,7 @@ static void create() {
     SetLong("LIGHT SIDE part of the Arena.");
     SetInventory(([
                 "/domains/arena/obj/button_light" : 1,
-                "/domains/arena/npc/rat" : 1
+                "/domains/arena/npc/LS_queen" : 1
                 ])); 
     
 SetExits( ([ "north" : "/domains/arena/1s.c"

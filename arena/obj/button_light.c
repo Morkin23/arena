@@ -42,7 +42,7 @@ static void create() {
     SetKeyName("button");
     SetId(({"button","button on the pedestal" }));
     SetAdjectives("pedestal", "red","shiny","candylike","candy-like","big");
-    SetShort("a big ORC button");
+    SetShort("a big LIGHT SIDE button");
     SetLong("It is a red, shiny, candy-like button.");
     SetPress((: PushButton :));
     //SetPress(tell_object(this_player(),"hi!"));

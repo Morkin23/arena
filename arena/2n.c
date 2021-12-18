@@ -10,7 +10,7 @@ static void create() {
     SetLong("DARK SIDE part of the Arena.");
     SetInventory(([
                 "/domains/arena/obj/button_dark" : 1,
-                "/domains/arena/npc/rat" : 1
+                "/domains/arena/npc/DS_lord" : 1
                 ])); 
     
 	SetExits( ([ "south" : "/domains/arena/1n.c"
