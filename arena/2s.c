@@ -8,7 +8,12 @@ static void create() {
     SetAmbientLight(30);
     SetShort("Arena - 2S");
     SetLong("LIGHT SIDE part of the Arena.");
-    SetExits( ([ "north" : "/domains/arena/1s.c"
+    SetInventory(([
+                "/domains/arena/obj/button_light" : 1,
+                "/domains/arena/npc/rat" : 1
+                ])); 
+    
+SetExits( ([ "north" : "/domains/arena/1s.c"
       ]) );
 }
 

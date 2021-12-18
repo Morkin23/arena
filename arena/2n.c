@@ -8,7 +8,12 @@ static void create() {
     SetAmbientLight(30);
     SetShort("Arena - 2N");
     SetLong("DARK SIDE part of the Arena.");
-    SetExits( ([ "south" : "/domains/arena/1n.c"
+    SetInventory(([
+                "/domains/arena/obj/button_dark" : 1,
+                "/domains/arena/npc/rat" : 1
+                ])); 
+    
+	SetExits( ([ "south" : "/domains/arena/1n.c"
       ]) );
 }
 

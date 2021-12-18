@@ -10,6 +10,7 @@ static void create() {
     SetLong("South part of the Arena.");
     SetExits( ([ "west" : "/domains/arena/1s1w.c", 
         	"east" : "/domains/arena/1s1e.c",
+		"south" : "/domains/arena/2s.c",
           "north" : "/domains/arena/center.c"
       ]) );
 }
