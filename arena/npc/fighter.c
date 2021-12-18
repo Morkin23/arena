@@ -5,10 +5,17 @@ int CheckOrc(mixed val){
     string *allowed_races = ({ "orc" });
     if(!val) return 0;
     if(!objectp(val)) return 0;
+    eventforce("say Test");
     if(member_array(val->GetRace(), allowed_races) != -1) return 1;
     return 0;
 }
 
+int Pozdrav(mixed val){
+    if(!val) return 0;
+    if(!objectp(val)) return 0;
+    eventForce("say Hello "+val->GetRace());
+    return 0;
+}
 static void create(){
       mapping ars;
     int rand;
@@ -16,7 +23,7 @@ static void create(){
     sentient::create();
     SetKeyName("fighter");
     SetId( ({"human","npc","warrior","fighter"}) );
-    SetShort("a fighter");
+    SetShort("a TALK");
     SetLong("This is a large human warrior. His pectoral muscles "+
             "are clearly visible even through his armor. His face is covered in "+
             "bold blue tattoos.");
@@ -24,8 +31,7 @@ static void create(){
     SetRace("human");
     SetGender("male");
     SetClass("fighter");
-    SetWanderSpeed(3);
-    SetEncounter( (: CheckOrc :) );
+    SetEncounter( (: Pozdrav :) );
     ars = ([ ]);
     switch (rand) {
 		case 0: ars["/domains/arena/weap/sharpsword"]="wield sword"; write(rand); break;
