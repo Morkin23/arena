@@ -2,10 +2,10 @@
 inherit LIB_SENTIENT;
 
 int CheckOrc(mixed val){
-    string *allowed_races = ({ "light_side" });
     if(!val) return 0;
     if(!objectp(val)) return 0;
-    if(member_array(val->GetId(), allowed_races) != -1) return 1;
+    jmeno = (val->GetTown());
+    if(strsrch( jmeno, "lightside" ) != -1) return 1;
     return 0;
 }
 
@@ -16,10 +16,11 @@ static void create(){
     sentient::create();
     SetKeyName("Dark side fighter");
     SetId( ({"human","npc","warrior","fighter","dark_side"}) );
-    SetShort("a fighter");
+    SetShort("a dark side fighter (standard)");
     SetLong("This is a large human warrior. His pectoral muscles "+
             "are clearly visible even through his armor. His face is covered in "+
             "bold blue tattoos.");
+    SetTown("darkside");
     SetLevel(5;
     SetRace("human");
     SetGender("male");

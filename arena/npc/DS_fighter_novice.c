@@ -1,10 +1,12 @@
 #include <lib.h>
 inherit LIB_SENTIENT;
+string jmeno;
 
 int CheckOrc(mixed val){
-    string *allowed_races = ({ "orc" });
     if(!val) return 0;
     if(!objectp(val)) return 0;
+    jmeno = (val->GetTown());
+    if(strsrch( jmeno, "lightside" ) != -1) return 1;
     return 0;
 }
 
@@ -15,10 +17,11 @@ static void create(){
     sentient::create();
     SetKeyName("Dark side novice fighter");
     SetId( ({"human","npc","warrior","fighter","dark_side"}) );
-    SetShort("a novice fighter");
+    SetShort("a dark side fighter (novice)");
     SetLong("This is a large human warrior. His pectoral muscles "+
             "are clearly visible even through his armor. His face is covered in "+
             "bold blue tattoos.");
+    SetTown("darkside");        
     SetLevel(2);
     SetRace("human");
     SetClass("fighter");
