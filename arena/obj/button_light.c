@@ -17,7 +17,7 @@ int PushButton(object who) {
     write(rand);
     switch(rand){
     case 0 : objects=({ load_object("/domains/arena/npc/LS_fighter_novice") });break;
-    case 1 : objects=({ load_object("/domains/arena/npc/LS_fighter") });break;
+    case 1 : objects=({ load_object("/domains/arena/npc/LS_fighter_standard") });break;
     case 2 : objects=({ load_object("/domains/arena/npc/LS_fighter_veteran") });break;
     //case 3 : objects=({ load_object("/domains/arena/npc/fighter_novice") });break;
     //case 4 : objects=({ load_object("/domains/arena/npc/fighter") });break;

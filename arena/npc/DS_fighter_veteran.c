@@ -1,5 +1,6 @@
 #include <lib.h>
 inherit LIB_SENTIENT;
+string jmeno;
 
 int CheckOrc(mixed val){
     if(!val) return 0;

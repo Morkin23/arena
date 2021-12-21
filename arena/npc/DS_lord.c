@@ -4,14 +4,13 @@ inherit LIB_SENTIENT;
 
 static void create() {
     sentient::create();
-    SetKeyName("rat");
-    SetMaxHealthPoints(10);
-    SetAdjectives( ({"mangy", "little", "dirty"}) );
-    SetId( ({"rat"}) );
+    SetKeyName("Dark side lord");
+    SetId( ({"lord"}) );
     SetShort("*DARK SIDE* lord");
-    SetLong("A scruffy little dirty rat. Beware, creature randomly pushing button.");
-    SetLevel(1);
-    SetRace("rodent");
+    SetLong("Dark side lord. Beware, creature randomly pushing button.");
+    SetLevel(20);
+     SetTown("darkside");
+    SetRace("human");
     SetGender("male");
     SetClass("fighter");
     SetAction(10, ("!push button"));

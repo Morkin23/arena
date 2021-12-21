@@ -22,7 +22,7 @@ static void create(){
             "are clearly visible even through his armor. His face is covered in "+
             "bold blue tattoos.");
     SetTown("lightside");
-    SetLevel(5;
+    SetLevel(5);
     SetRace("human");
     SetGender("male");
     SetClass("fighter");

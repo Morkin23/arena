@@ -1,5 +1,6 @@
 #include <lib.h>
 inherit LIB_SENTIENT;
+string jmeno;
 
 int CheckOrc(mixed val){
     if(!val) return 0;
@@ -21,7 +22,7 @@ static void create(){
             "are clearly visible even through his armor. His face is covered in "+
             "bold blue tattoos.");
     SetTown("darkside");
-    SetLevel(5;
+    SetLevel(5);
     SetRace("human");
     SetGender("male");
     SetClass("fighter");
