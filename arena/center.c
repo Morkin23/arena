@@ -22,6 +22,7 @@ static void create() {
 //                "/domains/arena/npc/red_dragon" : 1,
 //                "/domains/arena/npc/dummy" : 1,
 		            "/domains/arena/npc/scanner" : 1,
+                "/domains/arena/obj/cedule" : 1,
                 ]) ); 
 }
 
